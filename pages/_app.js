@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
+import "notyf/notyf.min.css";
+import "../styles/notyf-exun.css";
 
 function MyApp({ Component, pageProps }) {
   return (

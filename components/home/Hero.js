@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { showExunToast } from "../../lib/exunToast";
+
+const registrationOpen = false;
 
 export default function Hero({ scrollToAboutRef }) {
   return (
@@ -9,19 +12,25 @@ export default function Hero({ scrollToAboutRef }) {
           <br /> of <span className="text-primary">Exun</span>
         </h1>
         <div className="flex items-center gap-3 mt-10 md:mt-20">
-          
-          {/* <button className="button" onClick={scrollToAboutRef}>
-            Read More
-          </button> */}
-         
-          <a
-            href="https://reg.exunclan.com"
-            className="button text-lg font-medium"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Register for Exun 2025
-          </a>
+          {registrationOpen ? (
+            <a
+              href="https://reg.exunclan.com"
+              className="button text-lg font-medium"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Register for Exun 2025
+            </a>
+          ) : (
+            <button
+              onClick={() =>
+                showExunToast("Registrations for Exun 2025 are now over.")
+              }
+              className="button text-lg font-medium"
+            >
+              Register for Exun 2025
+            </button>
+          )}
         </div>
       </div>
       <Image

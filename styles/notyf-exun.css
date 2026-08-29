@@ -1,0 +1,85 @@
+.notyf__toast {
+  border-radius: 4px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  max-width: 380px !important;
+  width: auto !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.notyf__ripple {
+  background: #2977f5 !important;
+  border-radius: 50% !important;
+  height: 600px !important;
+  width: 600px !important;
+}
+.notyf__wrapper {
+  padding: 14px 18px !important;
+  padding-right: 44px !important;
+  border-radius: 4px !important;
+  gap: 2px;
+}
+.notyf__message {
+  font-family: "Inter", system-ui, -apple-system, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  letter-spacing: -0.01em !important;
+  color: #ffffff !important;
+}
+.notyf__icon {
+  margin-right: 12px !important;
+  opacity: 1 !important;
+  animation-delay: 0.15s !important;
+  width: 26px !important;
+  height: 26px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 0 !important;
+}
+.notyf__icon svg {
+  display: block !important;
+  width: 26px !important;
+  height: 26px !important;
+  flex-shrink: 0 !important;
+}
+.notyf__dismiss {
+  margin-right: 0 !important;
+  width: 32px !important;
+  right: 6px !important;
+}
+.notyf__dismiss-btn {
+  background: transparent !important;
+  opacity: 0.85 !important;
+  transition: opacity 0.2s ease, background 0.2s ease !important;
+  border-radius: 4px !important;
+  width: 32px !important;
+}
+.notyf__dismiss-btn:before,
+.notyf__dismiss-btn:after {
+  background: #ffffff !important;
+  height: 11px !important;
+  width: 2px !important;
+  left: calc(50% - 1px) !important;
+  top: calc(50% - 6px) !important;
+  opacity: 0.95 !important;
+}
+.notyf__dismiss-btn:hover {
+  background: transparent !important;
+  opacity: 1 !important;
+}
+@media only screen and (max-width: 480px) {
+  .notyf {
+    padding: 16px !important;
+  }
+  .notyf__toast {
+    max-width: none !important;
+    width: 100% !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  }
+  .notyf__ripple {
+    height: 800px !important;
+    width: 800px !important;
+  }
+}
